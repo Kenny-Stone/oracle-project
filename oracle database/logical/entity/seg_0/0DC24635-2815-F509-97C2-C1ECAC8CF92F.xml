@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0DC24635-2815-F509-97C2-C1ECAC8CF92F" name="Payment">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:59:58 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="payment_id" id="BD85111A-DAB3-8D9B-E8C5-44D9516EDC71">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 14:00:10 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="amount" id="036F094B-B274-8626-4FE6-D19ECD44EACE">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 14:00:24 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Payment_date" id="F2AA0B4B-1BB5-C89B-6FC4-2C57AD2BD428">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 14:00:32 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_id" id="139AF107-FB16-970B-6EB9-B83E53E4095B">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:00 UTC</createdTime>
+<generatorID>8B142B47-DF4B-1204-2D87-E54950595C4D</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F829392C-CD03-3CC3-8804-0DA30AB793DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="37074D07-1B59-70EC-A51E-7D53CA0C6F37" name="Payment PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 14:24:02 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD85111A-DAB3-8D9B-E8C5-44D9516EDC71</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

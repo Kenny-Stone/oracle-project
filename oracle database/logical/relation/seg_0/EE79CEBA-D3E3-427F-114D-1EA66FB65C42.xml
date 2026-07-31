@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_USER_BOOKINGS" directorySegmentName="seg_0" id="EE79CEBA-D3E3-427F-114D-1EA66FB65C42">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:38:31 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<sourcePk>3F72B777-7FE6-B270-A03F-81F0314FD3E0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>53B4DCE1-904D-1ADB-622B-A4BC9C082E33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D9BEACD4-398F-0AD0-FF91-875E1093D501</targetEntity>
+<transferable>true</transferable>
+</Relation>

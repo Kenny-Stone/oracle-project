@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D79E2CB-8FB5-58F5-36B0-F39680B95D44" name="Payment">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>0DC24635-2815-F509-97C2-C1ECAC8CF92F</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_id" id="73003CD0-9064-2FFE-7EDC-F13D5F54CCE2">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>BD85111A-DAB3-8D9B-E8C5-44D9516EDC71</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount" id="58C3DEB0-2BAC-AA38-07F1-D2994683C665">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>036F094B-B274-8626-4FE6-D19ECD44EACE</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_date" id="00B6B766-FA35-A8C6-0E23-9D290D348121">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>F2AA0B4B-1BB5-C89B-6FC4-2C57AD2BD428</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booking_id" id="5EC434B7-A360-FC4B-586A-7F401EE20BCB">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>139AF107-FB16-970B-6EB9-B83E53E4095B</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA039B45-31D5-D8C0-B133-92623D931360" referredColumn="01C9F112-6B91-F73B-0A48-3C497B7070BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2BC41CD-7658-8BE9-1A7C-EAC147365542" name="Payment_PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>37074D07-1B59-70EC-A51E-7D53CA0C6F37</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73003CD0-9064-2FFE-7EDC-F13D5F54CCE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F4B41E2-C433-BA89-F652-227AEDDE9A9F" name="Payment_Booking_FK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>8B142B47-DF4B-1204-2D87-E54950595C4D</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EC434B7-A360-FC4B-586A-7F401EE20BCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

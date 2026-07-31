@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EVENT_TICKET" directorySegmentName="seg_0" id="CDC5B939-996B-9E68-5AA6-0E5FD12C56DB">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:23:08 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<sourcePk>D32773B9-1DD6-A05A-3CFF-5A93A56910A2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>52896C7F-FE33-923D-9B03-0963F33CF9FD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C395F8FD-3109-C519-1461-D3C9A84AE675</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

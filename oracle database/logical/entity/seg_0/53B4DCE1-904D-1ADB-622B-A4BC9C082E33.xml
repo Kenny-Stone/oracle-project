@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53B4DCE1-904D-1ADB-622B-A4BC9C082E33" name="User">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:42:56 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="07592489-57B6-BA75-F769-AA3AD3E4E6CF">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:45:19 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="FDE05B27-42EF-0B05-AC00-23C79CB00C87">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:46:01 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password_hash" id="C3FA6FC7-16C6-6ACE-75C4-2415ED6A7672">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:53:32 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="BAD0D29F-25F4-EC55-2C21-C864EBFECACD">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:53:55 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="E0756ADF-7794-B61A-28DF-3C716070A42C">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:54:01 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F72B777-7FE6-B270-A03F-81F0314FD3E0" name="User PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:45:31 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>07592489-57B6-BA75-F769-AA3AD3E4E6CF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="999C575F-C96C-8751-42DD-1C6EB7436BDE" name="Key_2">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 13:50:59 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="false"/>
+</engineerTo>
+<newElementsIDs>FDE05B27-42EF-0B05-AC00-23C79CB00C87</newElementsIDs>
+<usedAttributes>
+<attributeRef>FDE05B27-42EF-0B05-AC00-23C79CB00C87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

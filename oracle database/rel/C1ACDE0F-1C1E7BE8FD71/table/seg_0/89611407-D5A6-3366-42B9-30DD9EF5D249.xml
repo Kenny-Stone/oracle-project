@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89611407-D5A6-3366-42B9-30DD9EF5D249" name="User">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>53B4DCE1-904D-1ADB-622B-A4BC9C082E33</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="68F96D19-6D82-C721-F66B-7068C57E79B1">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>07592489-57B6-BA75-F769-AA3AD3E4E6CF</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="A1E6B77F-C613-54E4-B117-332D79E63569">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>FDE05B27-42EF-0B05-AC00-23C79CB00C87</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password_hash" id="42D8658B-925A-287B-3CCE-B2E2091D20BE">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>C3FA6FC7-16C6-6ACE-75C4-2415ED6A7672</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="94296622-AEBF-E13A-3B09-022B061113EA">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>BAD0D29F-25F4-EC55-2C21-C864EBFECACD</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="D73605DD-0608-E641-F7E5-E76C0B38A1BF">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>E0756ADF-7794-B61A-28DF-3C716070A42C</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7259AF80-05AF-F51B-AD1D-3C0691438C01" name="User_PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>3F72B777-7FE6-B270-A03F-81F0314FD3E0</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68F96D19-6D82-C721-F66B-7068C57E79B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D61A94F-9A78-F7BD-DAFE-C424A19906BA" name="User_username_UN">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>999C575F-C96C-8751-42DD-1C6EB7436BDE</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1E6B77F-C613-54E4-B117-332D79E63569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

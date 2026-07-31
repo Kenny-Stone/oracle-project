@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3C19167-7362-AACA-F642-5F5DEF296663" name="Event">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>52896C7F-FE33-923D-9B03-0963F33CF9FD</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="event_id" id="95E82B1B-63D6-039B-90F3-788C66FFEDEC">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>BD76AE0E-BB60-54CA-759F-EB771653CD28</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="D6F7ADE6-17C1-6741-E83F-2570FBDFC9A5">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>9AAEC920-F24F-49F8-7E5E-96DE22E5A48E</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="1A60BE50-80B2-C351-EB08-151B395B31AE">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>8CC4A010-50D7-797E-6052-0A58E94533D5</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_date" id="F205729E-64FE-C77B-890E-625A9FEDF4C0">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>36452A32-8BAA-0D0D-8C96-60848FBCE197</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacity" id="54DA30FA-F2B7-15C5-FBBB-8E4D8564EE76">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>574B55D9-D70F-C7CA-7DCB-0FFE4080F2FC</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31722955-A786-A5F3-D2C2-6535EF19A440" name="Event_PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>D32773B9-1DD6-A05A-3CFF-5A93A56910A2</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95E82B1B-63D6-039B-90F3-788C66FFEDEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

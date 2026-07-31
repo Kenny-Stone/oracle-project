@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EF5F251-E470-C3A4-7007-704DFA95FDA9" name="Booking">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>D9BEACD4-398F-0AD0-FF91-875E1093D501</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="booking_id" id="01C9F112-6B91-F73B-0A48-3C497B7070BC">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>F829392C-CD03-3CC3-8804-0DA30AB793DF</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="49895CB0-C020-D3B8-19DD-08AC56C06323">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>375F1BC4-1CCB-59DF-B638-F36E69A6BD67</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="E5195B70-F9E1-6A2C-A5F0-BA6B04B4184E">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>16622C1B-617E-1E44-648F-2A8C82E4701E</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD38FE71-66FB-0AFF-C263-FB070B31AE67" referredColumn="68F96D19-6D82-C721-F66B-7068C57E79B1"/>
+</associations>
+</Column>
+<Column name="ticket_id" id="44337D4B-31B7-9588-F949-65D430BB6C69">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>9BD0553E-1C1B-E41C-884F-F4FFB8A914E3</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="415B55FA-89DE-3857-117A-CC7C5625962F" referredColumn="5D1D911E-554E-6CA7-D49A-A8BFA5413988"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25A6BDC3-3FC1-4D78-208A-F48EA2E9275F" name="Booking_PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:15 UTC</createdTime>
+<generatorID>2E0594F6-47E8-513B-3380-2807B2FA6650</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01C9F112-6B91-F73B-0A48-3C497B7070BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC7C32D8-F543-011A-C689-188C8D756D00" name="Booking_User_FK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>EE79CEBA-D3E3-427F-114D-1EA66FB65C42</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5195B70-F9E1-6A2C-A5F0-BA6B04B4184E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71A21516-D95C-7C7D-3E94-F0EBDB2E703B" name="Booking_Ticket_FK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:35:16 UTC</createdTime>
+<generatorID>1FBCB910-1591-45DB-98FA-95B0C70C7563</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44337D4B-31B7-9588-F949-65D430BB6C69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

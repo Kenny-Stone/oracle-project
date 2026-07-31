@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9BEACD4-398F-0AD0-FF91-875E1093D501" name="Booking">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:13:27 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="booking_id" id="F829392C-CD03-3CC3-8804-0DA30AB793DF">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:13:42 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity" id="375F1BC4-1CCB-59DF-B638-F36E69A6BD67">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:13:42 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="16622C1B-617E-1E44-648F-2A8C82E4701E">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:38:31 UTC</createdTime>
+<generatorID>EE79CEBA-D3E3-427F-114D-1EA66FB65C42</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>07592489-57B6-BA75-F769-AA3AD3E4E6CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ticket_id" id="9BD0553E-1C1B-E41C-884F-F4FFB8A914E3">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 18:31:41 UTC</createdTime>
+<generatorID>1FBCB910-1591-45DB-98FA-95B0C70C7563</generatorID>
+<ownerDesignName>oracle database</ownerDesignName>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7E3196CE-5E49-03D5-9160-AFDA9AA29F33</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E0594F6-47E8-513B-3380-2807B2FA6650" name="Booking PK">
+<createdBy>aniebernardkoranteng</createdBy>
+<createdTime>2026-07-11 16:14:13 UTC</createdTime>
+<ownerDesignName>oracle database</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C1ACDE0F-74EB-C729-0217-1C1E7BE8FD71" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F829392C-CD03-3CC3-8804-0DA30AB793DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
